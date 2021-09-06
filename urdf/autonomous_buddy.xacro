@@ -203,7 +203,7 @@
     <visual name='hokuyo_visual'>
       <origin xyz="0.0 0 0" rpy="0 0 0"/>
       <geometry>
-         <box size="0.1 0.1 0.1"/>
+        <mesh filename="package://autonomous_buddy/meshes/hokuyo.dae"/>
       </geometry>
     </visual>
   </link>
@@ -213,5 +213,5 @@
     <child link="hokuyo"/>
     <parent link="chassis"/>
   </joint>
-  
+
 </robot>
