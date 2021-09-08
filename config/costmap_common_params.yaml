@@ -1,9 +1,12 @@
 map_type: costmap
 
-obstacle_range: 0.0
-raytrace_range: 0.0
+obstacle_range: 4.0
+raytrace_range: 5.0
 
-transform_tolerance: 0.0
+transform_tolerance: 1.0
+
+# define the coordinates of the robot outline
+footprint: [[0.25,0.16],[0.25,-0.16],[-0.25,-0.16],[-0.25,0.16]]
 
 inflation_radius: 0.0
 

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Map server, TF map-odom, Rviz -->
+<!-- Move Base (Navigation Stack), Map server, TF map-odom, Rviz -->
 
 <launch>
+
+<!-- launch Move Base -->
+<include file="$(find autonomous_buddy)/launch/move_base.launch"/>
 
 <!-- Run the map server to load a pre-made map -->
 <arg name="map_file" default="$(find autonomous_buddy)/maps/empty_map_74x74x20cm.yaml"/>
